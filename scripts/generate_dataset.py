@@ -4,7 +4,7 @@ import time
 from collector import collect_metrics
 from scorer import calculate_health_score
 
-file_path = "data/training_data.csv"
+file_path = "data/system_data.csv"
 
 # Create header if not exists
 if not os.path.exists(file_path):
