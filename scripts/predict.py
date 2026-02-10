@@ -26,7 +26,7 @@ def predict_health(cpu, memory, temperature, uptime, upload_speed, download_spee
     data_scaled = scaler.transform(data)
 
     # Predict
-    score = model.predict(data_scaled)[0]
+    score =round( model.predict(data_scaled)[0])
 
     # Category
     if score >= 90:
