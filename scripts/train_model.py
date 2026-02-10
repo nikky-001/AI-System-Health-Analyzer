@@ -69,3 +69,9 @@ model_path = os.path.join(model_folder, "health_model.pkl")
 joblib.dump(model, model_path)
 
 print("Model Saved At:", model_path)
+
+scaler_path = os.path.join(model_folder, "scaler.pkl")
+joblib.dump(scaler, scaler_path)
+
+print("Scaler Saved At:", scaler_path)
+
