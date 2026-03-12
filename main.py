@@ -1,7 +1,7 @@
 from scripts.predict import predict_health
 
 score, category, errors = predict_health(
-    cpu=5,
+    cpu=90,
     memory=10,
     temperature=0,
     uptime=12000,

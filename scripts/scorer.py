@@ -25,10 +25,10 @@ def calculate_health_score(data):
     elif memory > 40:
         score -= 5
 
-    # Temperature penalty (ignore 0)
+    # Temperature penalty
     if temperature > 0:
         if temperature > 80:
-            score -= 20
+            score -= 15
         elif temperature > 65:
             score -= 10
         elif temperature > 50:
@@ -40,7 +40,7 @@ def calculate_health_score(data):
 
     # Error penalty 
     if error > 0:
-        score -= 30
+        score -= 20
 
     # Uptime penalty
     if uptime > 86400: 

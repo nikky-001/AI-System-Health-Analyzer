@@ -1,7 +1,7 @@
 def calculate_error_count(cpu, memory, temperature):
     error_count = 0
 
-    if cpu > 90:
+    if cpu > 80:
         error_count += 1
     if memory > 90:
         error_count += 1

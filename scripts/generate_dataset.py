@@ -1,8 +1,8 @@
 import csv
 import os
 import time
-from collector import collect_metrics
-from scorer import calculate_health_score
+from scripts.collector import collect_metrics
+from scripts.scorer import calculate_health_score
 
 file_path = "data/system_data.csv"
 
@@ -46,4 +46,4 @@ while True:
             score
         ])
 
-    time.sleep(5)
+    time.sleep(120)
