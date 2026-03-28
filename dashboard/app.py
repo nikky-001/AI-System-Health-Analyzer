@@ -84,8 +84,6 @@ cpu_spikes = resampled_df["cpu_anomaly"].sum()
 
 st.metric("CPU Spikes Detected in Selected Period", int(cpu_spikes))
 
-
-
 # Trends
 st.write("## Usage & Health Trends")
 col1, col2, col3 = st.columns(3)
@@ -160,10 +158,12 @@ st.write("## Errors & Health Distribution")
 col1, col2 = st.columns(2)  
 
 with col1:
-    st.write("### Error Count Pie")
-    error_counts = df["error_count"].value_counts()
-    fig, ax = plt.subplots(figsize=(1,1))
-    error_counts.plot.pie(autopct=lambda p: f'{int(round(p))}%', ylabel="", colors=["#FF9999","#99CCFF"], textprops={"fontsize": 4}, ax=ax) 
+    st.write("### Error Count Histogram")
+    fig, ax = plt.subplots()
+    bins = np.arange(0, df["error_count"].max() + 1, 1)
+    ax.hist(df["error_count"], bins=bins, color=["#FF9999"], edgecolor="black")
+    ax.set_xlabel("Error Count")
+    ax.set_ylabel("Frequency")
     st.pyplot(fig)
 
 with col2:

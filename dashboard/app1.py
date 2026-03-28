@@ -26,7 +26,7 @@ if time_range == "Last 1 Hour":
 
 elif time_range == "Last 24 Hours":
     filtered_df = df[df["timestamp"] >= now - pd.Timedelta(days=1)]
-
+ 
 elif time_range == "Last 7 Days":
     filtered_df = df[df["timestamp"] >= now - pd.Timedelta(days=7)]
 
