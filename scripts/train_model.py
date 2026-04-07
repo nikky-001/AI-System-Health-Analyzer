@@ -65,7 +65,6 @@ model_folder = "models"
 os.makedirs(model_folder, exist_ok=True)
 
 model_path = os.path.join(model_folder, "health_model.pkl")
-
 joblib.dump(model, model_path)
 
 print("Model Saved At:", model_path)
