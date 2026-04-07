@@ -17,7 +17,7 @@ st.subheader("System Monitoring Dashboard")
 # Load data
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/system_data.csv")
+    return pd.read_csv("data/clean_system_data.csv")
 
 df = load_data()
 df["timestamp"] = pd.to_datetime(df["timestamp"])
@@ -158,12 +158,13 @@ st.write("## Errors & Health Distribution")
 col1, col2 = st.columns(2)  
 
 with col1:
-    st.write("### Error Count Histogram")
+    st.write("### Error Count Distribution")
+    error_counts = df["error_count"].value_counts().sort_index()
     fig, ax = plt.subplots()
-    bins = np.arange(0, df["error_count"].max() + 1, 1)
-    ax.hist(df["error_count"], bins=bins, color=["#FF9999"], edgecolor="black")
+    ax.bar(error_counts.index.astype(str), error_counts.values)
     ax.set_xlabel("Error Count")
     ax.set_ylabel("Frequency")
+    ax.set_title("Error Count Distribution")
     st.pyplot(fig)
 
 with col2:
@@ -179,3 +180,4 @@ with col2:
 
 
 
+    
