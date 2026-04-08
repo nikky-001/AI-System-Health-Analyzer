@@ -153,8 +153,8 @@ with col2:
     ax.set_ylabel("Frequency")
     st.pyplot(fig)
 
-# Errors & Health
-st.write("## Errors & Health Distribution")
+# Error & Health
+st.write("## Error & Health Distribution")
 col1, col2 = st.columns(2)  
 
 with col1:
