@@ -71,6 +71,6 @@ Additional logic was implemented to count the number of CPU spikes detected with
 
 The project code was organized into separate modules for data processing, prediction logic, and dashboard visualization, improving code maintainability and scalability.
 
-13. Current Project Status
+13. Dashboard Development
 
-The project is currently under active development. Further improvements in model accuracy, anomaly detection techniques, and dashboard visualization are planned in the next stages
+An interactive and dynamic dashboard was developed to visualize system metrics, health score trends, and network activity with customizable time-based filtering for enhanced monitoring and analysis.
