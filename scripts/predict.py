@@ -8,7 +8,7 @@ scaler = joblib.load("models/scaler.pkl")
 
 def predict_health(cpu, memory, temperature, uptime, upload_speed, download_speed):
 
-    # AUTO ERROR COUNT
+    # Auto error count
     error_count = calculate_error_count(cpu, memory, temperature)
 
     # Create dataframe

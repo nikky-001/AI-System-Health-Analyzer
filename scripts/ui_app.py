@@ -1,7 +1,7 @@
 import sys
 import os
 
-# Add project root to path
+# Add project path to root
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import tkinter as tk
@@ -9,7 +9,7 @@ import pandas as pd
 from tkinter import messagebox
 from scripts.predict import predict_health
 
-df = pd.read_csv("data/system_data.csv")
+df = pd.read_csv("data/clean_system_data.csv")
 
 def show_result(score, category, avg_score, reasons, suggestions):
 
