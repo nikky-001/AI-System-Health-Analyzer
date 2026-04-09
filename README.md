@@ -51,8 +51,10 @@ The model uses the following features:
 
 You can either clone the repository or download it as a ZIP:
 
+```bash
 git clone <https://github.com/nikky-001/AI-System-Health-Analyzer>
 cd ai-system-health-analyzer
+```
 
 ---
 
@@ -62,8 +64,6 @@ Make sure you are in the **project root directory**, then run:
 
 ```bash
 pip install -r requirements.txt
-```
-
 ```
 
 ---
@@ -139,13 +139,13 @@ ai-system-health-analyzer/
 │   └── app.py
 │
 ├── data/
-│   ├── raw_system_data.csv
+│   ├── system_data.csv
 │   └── clean_system_data.csv
 │
-├── model/
-│   ├── model.pkl
+├── models/
+│   ├── health_model.pkl
 │   └── scaler.pkl
-│
+|
 ├── main.py
 └── requirements.txt
 ```
@@ -180,4 +180,3 @@ ai-system-health-analyzer/
 * Alert system for critical health
 
 ---
-
