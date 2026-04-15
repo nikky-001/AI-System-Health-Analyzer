@@ -143,11 +143,16 @@ ai-system-health-analyzer/
 │   └── clean_system_data.csv
 │
 ├── models/
+|   ├── health_model.onnx
 │   ├── health_model.pkl
 │   └── scaler.pkl
 |
 ├── main.py
-└── requirements.txt
+├── convert_to_onnx.py
+├── .gitignore
+├── requirements.txt
+├── PROJECT_OVERVIEW.md
+└── README.md
 ```
 
 ---
