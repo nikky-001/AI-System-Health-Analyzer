@@ -179,9 +179,10 @@ ai-system-health-analyzer/
 
 ## 🧪 Future Improvements
 
-* ONNX deployment for embedded systems
-* Real-time hardware integration
-* Advanced anomaly detection
-* Alert system for critical health
+* Advanced anomaly detection with intelligent spike analysis
+* Real-time alert system for critical health conditions
+* Time-series forecasting for future health prediction
+* Enhanced UI/visualization for live system monitoring
+* Optimization for low-resource embedded systems
 
 ---
