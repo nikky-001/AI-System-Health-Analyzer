@@ -168,6 +168,22 @@ ai-system-health-analyzer/
 
 ---
 
+## 📦 Deployment Usage
+
+A deployment-ready version of this project is available here:
+
+👉 https://github.com/nikky-001/AI-Health-Analyzer-Runtime
+
+This package can be used for real-time health prediction and system integration without retraining the model.
+
+* The deployment system provides real-time health prediction
+* It can be integrated with external systems such as PCs, routers, and embedded devices
+* No need to retrain the model or regenerate data
+
+Refer to its documentation for setup and integration details.
+
+---
+
 ## ⚠️ Important Notes
 
 * Dataset generation is required only once initially
