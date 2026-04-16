@@ -199,11 +199,9 @@ Refer to its documentation for setup and integration details.
 
 ## 🧪 Future Improvements
 
-* Advanced anomaly detection using statistical and ML-based techniques  
 * Time-series forecasting models for improved future prediction  
 * Feature engineering enhancements for better model accuracy  
-* Automated model retraining with new incoming data  
-* Hyperparameter tuning and model optimization  
+* Automated model retraining with new incoming data    
 * Support for additional system metrics (disk usage, I/O, etc.)  
 * Improved data preprocessing and noise handling  
 * Optimization for large-scale and high-frequency data processing  
