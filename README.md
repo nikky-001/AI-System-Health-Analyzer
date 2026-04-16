@@ -173,7 +173,7 @@ ai-system-health-analyzer/
 
 A deployment-ready version of this project is available here:
 
-👉 https://github.com/nikky-001/AI-Health-Analyzer-Runtime
+👉 https://github.com/nikky-001/AI-System-Health-Analyzer-Runtime
 
 This package extends the current project by adding:
 
