@@ -14,7 +14,8 @@ It analyzes parameters like CPU usage, memory usage, temperature, uptime, and ne
 * 🤖 Machine learning-based health prediction
 * 📈 Interactive dashboard using Streamlit
 * ⚠️ Error tracking and anomaly insights
-* 📉 Trend analysis (CPU, Memory, Health Score)
+* 📉 Trend analysis (CPU, Memory, Health Score) 
+* ⚡ ONNX model support for cross-platform deployment 
 
 ---
 
@@ -174,11 +175,14 @@ A deployment-ready version of this project is available here:
 
 👉 https://github.com/nikky-001/AI-Health-Analyzer-Runtime
 
-This package can be used for real-time health prediction and system integration without retraining the model.
+This package extends the current project by adding:
 
-* The deployment system provides real-time health prediction
-* It can be integrated with external systems such as PCs, routers, and embedded devices
-* No need to retrain the model or regenerate data
+* Real-time health monitoring
+* Trend-based analysis
+* Intelligent alert generation
+* System-level integration support
+
+It is designed for integration with PCs, routers, and embedded systems without requiring retraining.
 
 Refer to its documentation for setup and integration details.
 
@@ -195,10 +199,13 @@ Refer to its documentation for setup and integration details.
 
 ## 🧪 Future Improvements
 
-* Advanced anomaly detection with intelligent spike analysis
-* Real-time alert system for critical health conditions
-* Time-series forecasting for future health prediction
-* Enhanced UI/visualization for live system monitoring
-* Optimization for low-resource embedded systems
+* Advanced anomaly detection using statistical and ML-based techniques  
+* Time-series forecasting models for improved future prediction  
+* Feature engineering enhancements for better model accuracy  
+* Automated model retraining with new incoming data  
+* Hyperparameter tuning and model optimization  
+* Support for additional system metrics (disk usage, I/O, etc.)  
+* Improved data preprocessing and noise handling  
+* Optimization for large-scale and high-frequency data processing  
 
 ---
